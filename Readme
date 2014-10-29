@@ -1,0 +1,21 @@
+Compile:
+
+run "make"
+
+Test:
+
+run "./run.sh"
+
+Compare three PBFs:
+
+run "python ComparePBF.py"
+parameters: 
+--runtime: number of times of running, to get the average run time
+--hashStart: the start point of number of hash functions
+--hashEnd: the end point of number of hash functions
+--hashInc: the increment of number of hash functions
+--distinct: the number of distinct keys
+--allStart: the start point of number fo total keys
+--allEnd: the end point of number fo total keys
+--allInc: the increment of number fo total keys
+--numThreads: number of threads in OpenMP
